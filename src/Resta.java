@@ -52,7 +52,7 @@ public class Resta {
 	 * @return devolvera el restultado de la resta
 	 */
 	
-	public static int resta(int valor1, int valor2, int valor3) {
+	public static double resta(double valor1, double valor2, double valor3) {
 		return valor1 - valor2 - valor2;
 	}
 	
