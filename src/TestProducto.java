@@ -2,9 +2,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+/**
+ * 
+ */
 
 /**
- * @author Jesus Rodriguez Herranz
+ * @author Jes�s Rodr�guez Herranz
  */
 class TestProducto {
 
