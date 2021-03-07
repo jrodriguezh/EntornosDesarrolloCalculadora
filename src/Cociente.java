@@ -29,8 +29,8 @@ public class Cociente {
 
 	/**
 	 * Este metodo sirve para realizar la division de dos numeros enteros<br>
-	 * 
-	 * Casos especiales:<br>
+	 * La división de dos números enteros se redondeará para dar un resultado de
+	 * otro entero Casos especiales:<br>
 	 * 
 	 * No es posible dividir entre cero, puesto que daraa lugar a un numero
 	 * infinito, Si divides un numero entre 0 dara lugar a un error tipo
