@@ -47,7 +47,9 @@ public class Cociente {
 	 */
 
 	public static double division(int valor1, int valor2) {
-		return valor1 / valor2;
+		
+		double resultado = valor1/valor2;
+		return resultado;
 	}
 
 	/**
