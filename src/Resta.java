@@ -19,8 +19,8 @@ public class Resta {
 	 * @return devolvera el restultado de la resta
 	 */
 	
-	public static int resta(int valor1, int valor2) {
-		return valor1 - valor2;
+	public static void resta(int valor1, int valor2) {
+		System.out.println(valor1 - valor2);
 	}
 	
 	/**
