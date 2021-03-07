@@ -10,29 +10,48 @@ import org.junit.jupiter.api.Test;
  */
 
 class TestResta {
-	
+
 	/**
-	 * Este test comprobará que no existen errores a la hora de realizar un resta entre dos números enteros {@link Resta#resta(int, int)}
+	 * Este test comprobará si existen errores a la hora de realizar un resta entre
+	 * dos números enteros {@link Resta#resta(int, int)}
 	 */
-	
+
 	@Test
 	void testRestaIntIntDosNumerosNegativos() {
 		// 1 Arrange - Preparar
 		// 2 Act - Ejecutar
-		int esperando= -5;
-		int resultado = Suma.suma(-2, -3); 
-		assertEquals(esperando,resultado);
-		
+		int esperando = 1;
+		int resultado = Resta.resta(-2, -3);
+		// 3 Assert - Comprobar
+		assertEquals(esperando, resultado);
+
 	}
+
+	/**
+	 * Este test comprobara si existen errores a la hora de realizar una resta entre
+	 * dos números reales {@link Resta#resta(double, double)}
+	 */
 
 	@Test
-	void testRestaDoubleDouble() {
-		fail("Not yet implemented");
+	void testRestaDoubleDoubleDosNumerosNegativos() {
+		// 1 Arrange - Preparar
+		// 2 Act - Ejecutar
+		double esperado= 1.50;
+		double resultado = Resta.resta(-1.5, -3.00);
+		// 3 Assert - Comprobar
+		assertEquals(esperado, resultado);
 	}
 
+	/**
+	 * Este test comprobara si existen errores a la hora de realizar una resta entre
+	 * dos números reales {@link Resta#resta(double, double, double)}
+	 */
+	
 	@Test
 	void testRestaDoubleDoubleDouble() {
 		fail("Not yet implemented");
+
+		
 	}
 
 	@Test
@@ -41,3 +60,4 @@ class TestResta {
 	}
 
 }
+
