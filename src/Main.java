@@ -1,13 +1,16 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 
 public class Main {
 	
-	static Scanner sn;
+
 	
 	public static void main(String[] args) {
 
-		sn = new Scanner(System.in);
+
+		Scanner sn = new Scanner(System.in);
+		sn.useLocale(Locale.US);
 		boolean salir = false;
 		int opcion;
 		int opcionSuma;
