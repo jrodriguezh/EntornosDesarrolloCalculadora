@@ -68,7 +68,7 @@ public class Cociente {
 	 * @return devolvera el resultado de la inversion
 	 */
 
-	public static double inverso(int valor1) {
+	public static double inverso(double valor1) {
 		return 1 / valor1;
 	}
 
