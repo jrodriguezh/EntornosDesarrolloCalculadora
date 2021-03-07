@@ -2,7 +2,13 @@
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+
+		/**
+		 * Pruebas para la clase Resta
+		 */
+		
+		Resta.resta(4, 5);
 
 	}
 
