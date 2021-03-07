@@ -18,8 +18,8 @@ class TestCociente {
 	@Test
 	void testDivisionDoubleDouble() {
 		// 1 Arrange - Preparar
-		// 2 Act - Ejecutar
 		double esperado = 3.75;
+		// 2 Act - Ejecutar
 		double resultado = Cociente.division(15.00, 4.00);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -33,8 +33,8 @@ class TestCociente {
 	@Test
 	void testDivisionEntre0() {
 		// 1 Arrange - Preparar
-		// 2 Act - Ejecutar
 		double esperado = Double.POSITIVE_INFINITY;
+		// 2 Act - Ejecutar
 		double resultado = Cociente.division(15, 0);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -49,8 +49,8 @@ class TestCociente {
 	@Test
 	void testDivisionIntInt() {
 		// 1 Arrange - Preparar
-		// 2 Act - Ejecutar
 		double esperado = 3.75;
+		// 2 Act - Ejecutar
 		int resultado = Cociente.division(15, 4);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -64,8 +64,8 @@ class TestCociente {
 	@Test
 	void testInverso() {
 		// 1 Arrange - Preparar
-		// 2 Act - Ejecutar
 		double esperado = 0.2;
+		// 2 Act - Ejecutar
 		int resultado = Cociente.inverso(5);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -79,8 +79,8 @@ class TestCociente {
 	@Test
 	void testInverso0() {
 		// 1 Arrange - Preparar
-		// 2 Act - Ejecutar
 		double esperado = Double.POSITIVE_INFINITY;
+		// 2 Act - Ejecutar
 		int resultado = Cociente.inverso(0);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -94,8 +94,8 @@ class TestCociente {
 	@Test
 	void testRaiz() {
 		// 1 Arrange - Preparar
-		// 2 Act - Ejecutar
 		double esperado = 2.2360679774997896964091736687313;
+		// 2 Act - Ejecutar
 		double resultado = Cociente.raiz(5);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -103,17 +103,48 @@ class TestCociente {
 	
 	/**
 	 * Este test comprobará que no existen errores a la hora de obtener la raiz
-	 * cuadrada de un número {@link Cociente#raiz(int)}
+	 * cuadrada de un número menor que 0 {@link Cociente#raiz(int)}
 	 */
 
 	@Test
 	void testRaizMenor0() {
 		// 1 Arrange - Preparar
+		double esperado = Double.NaN;
 		// 2 Act - Ejecutar
-		double esperado = 0;
 		double resultado = Cociente.raiz(-2);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
 	}
+	
+	/**
+	 * Este test comprobará que no existen errores a la hora de obtener la raiz
+	 * cuadrada de un número positivo infinito {@link Cociente#raiz(int)}
+	 */
 
+	@Test
+	void testRaizInfinito() {
+		// 1 Arrange - Preparar
+		double esperado = Double.POSITIVE_INFINITY;
+		// 2 Act - Ejecutar
+		double resultado = Cociente.raiz(Double.POSITIVE_INFINITY);
+		// 3 Assert - Comprobar
+		assertEquals(esperado, resultado);
+	}
+	
+	/**
+	 * Este test comprobará que no existen errores a la hora de obtener la raiz
+	 * cuadrada de 0 {@link Cociente#raiz(int)}
+	 */
+
+	@Test
+	void testRaiz0() {
+		// 1 Arrange - Preparar
+		double esperado = 0;
+		// 2 Act - Ejecutar
+		double resultado = Cociente.raiz(0);
+		// 3 Assert - Comprobar
+		assertEquals(esperado, resultado);
+	}
+	
+	
 }
