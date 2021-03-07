@@ -35,8 +35,8 @@ public class Resta {
 	 * @return devolvera el restultado de la resta
 	 */
 	
-	public static double resta(double valor1, double valor2) {
-		return valor1 - valor2;
+	public static void resta(double valor1, double valor2) {
+		System.out.println(valor1 - valor2);
 	}
 	
 	/**
@@ -52,8 +52,8 @@ public class Resta {
 	 * @return devolvera el restultado de la resta
 	 */
 	
-	public static double resta(double valor1, double valor2, double valor3) {
-		return valor1 - valor2 - valor2;
+	public static void resta(int valor1, int valor2, int valor3) {
+		System.out.println(valor1 - valor2 - valor3);
 	}
 	
 	/**
@@ -67,9 +67,9 @@ public class Resta {
 	 * @return
 	 */
 	
-	public static int restaAcumulado(int nuevovalor) {
+	public static void restaAcumulado(int nuevovalor) {
 		acumulador -= nuevovalor;
-		return acumulador;
+		System.out.println(acumulador);
 
 	}
 }
