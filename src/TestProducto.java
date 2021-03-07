@@ -19,9 +19,8 @@ class TestProducto {
 	@Test
 	void testProductoDoubleDouble() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		double esperado = -47.04;
+		// 2 Act - Ejecutar
 		double resultado = Producto.producto(-5.6, 8.4);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -36,9 +35,8 @@ class TestProducto {
 	@Test
 	void testProductoIntInt() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 29538;
+		// 2 Act - Ejecutar
 		int resultado = Producto.producto(547, 54);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -52,9 +50,8 @@ class TestProducto {
 	@Test
 	void testProductoDoubleDoubleDouble() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		double esperado = -443454.36;
+		// 2 Act - Ejecutar
 		double resultado = Producto.producto(5.8, -458.12, 968);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -68,9 +65,8 @@ class TestProducto {
 	@Test
 	void testProductoIntIntInt() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 17714970;
+		// 2 Act - Ejecutar
 		int resultado = Producto.producto(21, 1545, 546);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -85,9 +81,8 @@ class TestProducto {
 	
 	void testPotencia() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 4;
+		// 2 Act - Ejecutar
 		int resultado = Producto.potencia(2, 2);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -102,9 +97,8 @@ class TestProducto {
 	
 	void testPotenciaexponente0iguala1sisubasenoes0() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 1;
+		// 2 Act - Ejecutar
 		int resultado = Producto.potencia(5, 0);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -119,10 +113,9 @@ class TestProducto {
 	
 	void testPotenciaexponente1igualalabase() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 10;
-		int resultado = Producto.potencia(10, 1);
+		// 2 Act - Ejecutar
+		int resultado = Producto.potencia(10, 1);		
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
 		
@@ -135,9 +128,8 @@ class TestProducto {
 	
 	void testPotenciabase0iguala0() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 0;
+		// 2 Act - Ejecutar
 		int resultado = Producto.potencia(0, 2);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -152,9 +144,8 @@ class TestProducto {
 	
 	void testPotenciabasepositivasiemprepositiva() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 9261;
+		// 2 Act - Ejecutar
 		int resultado = Producto.potencia(21, 3);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -170,9 +161,8 @@ class TestProducto {
 	
 	void testPotenciabasenegativasiemprepositiva() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 9261;
+		// 2 Act - Ejecutar
 		int resultado = Producto.potencia(21, 3);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);

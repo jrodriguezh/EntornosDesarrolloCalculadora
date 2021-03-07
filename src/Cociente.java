@@ -46,7 +46,7 @@ public class Cociente {
 	 * @return devolvera el resultado de la division
 	 */
 
-	public static int division(int valor1, int valor2) {
+	public static double division(int valor1, int valor2) {
 		return valor1 / valor2;
 	}
 
@@ -66,20 +66,27 @@ public class Cociente {
 	 * @return devolvera el resultado de la inversion
 	 */
 
-	public static int inverso(int valor1) {
+	public static double inverso(int valor1) {
 		return 1 / valor1;
 	}
 
 
 	/**
 	 * Este metodo sirve para realizar el calculo de la raiz cuadrada de un numero
-	 * entero
+	 * numero<br>
+	 * 
+	 * Casos especiales:<br>
+	 * 
+	 * Si el argumento es NaN o menor que cero, el resultado será Nan. Si el
+	 * argumento es infinito positivo. El resultado es postivo infinito. Si el
+	 * argumento es cero positivo o cero negativo, el resultado sera el mismo que el
+	 * argumento
 	 * 
 	 * @param valor1 Contendra el valor del que se quiere calcular la raiz cuadrada
 	 * @return devolvera el resultado de la raiz cuadrada
 	 */
 
-	public static double raiz(int valor1) {
+	public static double raiz(double valor1) {
 
 		return Math.sqrt(valor1);
 

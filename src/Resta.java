@@ -23,7 +23,7 @@ public class Resta {
 	}
 	
 	/**
-	 * Este metodo sirve para restar tres numeros reales<br>
+	 * Este metodo sirve para restar dos numeros reales<br>
 	 * 
 	 * Casos especiales: 
 	 * <br>
@@ -56,7 +56,7 @@ public class Resta {
 	/**
 	 * Este metodo sirve para restar un valor acumulado<br>
 	 * 
-	 * Casos especiales: 
+	 * Casos especiales:
 	 * <br>
 	 * Esta calculadora no permitira la entrada de numeros negativos
 	 * 
