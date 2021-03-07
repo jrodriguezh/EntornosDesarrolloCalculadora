@@ -16,7 +16,6 @@ public class Resta {
 	 * 
 	 * @param valor1 Contendra el primer numero entero de la resta
 	 * @param valor2 Contendra el primer numero entero de la resta
-	 * @return devolvera el restultado de la resta
 	 */
 	
 	public static void resta(int valor1, int valor2) {
@@ -32,7 +31,6 @@ public class Resta {
 	 * 
 	 * @param valor1 Contendra el primer numero real de la resta
 	 * @param valor2 Contendra el segundo numero real de la resta
-	 * @return devolvera el restultado de la resta
 	 */
 	
 	public static void resta(double valor1, double valor2) {
@@ -49,7 +47,6 @@ public class Resta {
 	 * @param valor1 Contendra el primer numero entero de la resta
 	 * @param valor2 Contendra el segundo numero entero de la resta
 	 * @param valor3 Contendra el tercer numero entero de la resta
-	 * @return devolvera el restultado de la resta
 	 */
 	
 	public static void resta(double valor1, double valor2, double valor3) {
@@ -64,7 +61,6 @@ public class Resta {
 	 * Esta calculadora no permitira la entrada de numeros negativos
 	 * 
 	 * @param nuevovalor
-	 * @return
 	 */
 	
 	public static void restaAcumulado(int nuevovalor) {
