@@ -1,11 +1,13 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
 
+public class Main {
+	
+	static Scanner sn;
+	
 	public static void main(String[] args) {
 
-		Scanner sn = new Scanner(System.in);
+		sn = new Scanner(System.in);
 		boolean salir = false;
 		int opcion;
 		int opcionSuma;
@@ -20,8 +22,8 @@ public class Main {
 			System.out.println("1. Sumar");
 			System.out.println("2. Restar");
 			System.out.println("3. Multiplicar/Potencia");
-			System.out.println("3. Dividir/Raiz Cuadrada");
-			System.out.println("4. Salir");
+			System.out.println("4. Dividir/Raiz Cuadrada");
+			System.out.println("5. Salir");
 			System.out.println(" ");
 
 			System.out.println("Selecciona una de las opciones a continuación:");
@@ -157,6 +159,7 @@ public class Main {
 					Producto.potencia(base,exponente);
 					break;
 				}
+				
 
 				break;
 			case 4:
@@ -196,8 +199,9 @@ public class Main {
 					double radicando= sn.nextDouble();
 					Cociente.raiz(radicando);
 					break;
+				case 5:
+					salir = true;
 				}
-
 				break;
 			case 5:
 				salir = true;
