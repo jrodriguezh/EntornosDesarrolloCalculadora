@@ -8,7 +8,11 @@ public class Resta {
 	private static int acumulador = 0;
 
 	/**
-	 * Este metodo sirve para restar dos numeros enteros
+	 * Este metodo sirve para restar dos numeros enteros<br>
+	 * 
+	 * Casos especiales: 
+	 * <br>
+	 * Esta calculadora no permitira la entrada de numeros negativos
 	 * 
 	 * @param valor1 Contendra el primer numero entero de la resta
 	 * @param valor2 Contendra el primer numero entero de la resta
@@ -20,11 +24,14 @@ public class Resta {
 	}
 	
 	/**
-	 * Este metodo sirve para restar tres numeros reales
+	 * Este metodo sirve para restar tres numeros reales<br>
+	 * 
+	 * Casos especiales: 
+	 * <br>
+	 * Esta calculadora no permitira la entrada de numeros negativos
 	 * 
 	 * @param valor1 Contendra el primer numero real de la resta
 	 * @param valor2 Contendra el segundo numero real de la resta
-	 * @param valor3 Contendra el tercer numero real de la resta
 	 * @return devolvera el restultado de la resta
 	 */
 	
@@ -33,7 +40,11 @@ public class Resta {
 	}
 	
 	/**
-	 * Este metodo sirve para restar tres numeros enteros
+	 * Este metodo sirve para restar tres numeros enteros<br>
+	 * 
+	 * Casos especiales: 
+	 * <br>
+	 * Esta calculadora no permitira la entrada de numeros negativos
 	 * 
 	 * @param valor1 Contendra el primer numero entero de la resta
 	 * @param valor2 Contendra el segundo numero entero de la resta
@@ -46,7 +57,11 @@ public class Resta {
 	}
 	
 	/**
-	 * Este metodo sirve para restar un valor acumulado
+	 * Este metodo sirve para restar un valor acumulado<br>
+	 * 
+	 * Casos especiales: 
+	 * <br>
+	 * Esta calculadora no permitira la entrada de numeros negativos
 	 * 
 	 * @param nuevovalor
 	 * @return
