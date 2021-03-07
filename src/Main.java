@@ -1,10 +1,13 @@
 import java.util.Scanner;
 
-public class Main {
 
+public class Main {
+	
+	static Scanner sn;
+	
 	public static void main(String[] args) {
 
-		Scanner sn = new Scanner(System.in);
+		sn = new Scanner(System.in);
 		boolean salir = false;
 		int opcion;
 		int opcionSuma;
@@ -157,6 +160,7 @@ public class Main {
 					System.out.println(Producto.potencia(base, exponente));
 					break;
 				}
+				
 
 				break;
 			case 4:
@@ -196,8 +200,9 @@ public class Main {
 					double radicando = sn.nextDouble();
 					System.out.println(Cociente.raiz(radicando));
 					break;
+				case 5:
+					salir = true;
 				}
-
 				break;
 			case 5:
 				salir = true;
