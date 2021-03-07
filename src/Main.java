@@ -12,7 +12,7 @@ public class Main {
         int opcionResta;
         int opcionMultiplicar;
         int opcionDividir;
-        
+
         System.out.println("Bienvenido a CALCULADORA, ¿Que operación desea realizar?");
  
         while (!salir) {
