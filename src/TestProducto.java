@@ -2,12 +2,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * 
- */
 
 /**
- * @author Jesús Rodríguez Herranz
+ * @author Jesus Rodriguez Herranz
  */
 class TestProducto {
 
@@ -85,7 +82,7 @@ class TestProducto {
 	
 	void testPotencia() {
 		// 1 Arrange - Preparar
-
+		
 		// 2 Act - Ejecutar
 		int esperado = 4;
 		int resultado = Producto.potencia(2, 2);
@@ -105,7 +102,7 @@ class TestProducto {
 
 		// 2 Act - Ejecutar
 		int esperado = 1;
-		int resultado = Producto.potencia(5, 0);
+		int resultado = Producto.potencia((int) Math.random()*1+9999, 0);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
 	}
@@ -119,10 +116,10 @@ class TestProducto {
 	
 	void testPotenciaexponente1igualalabase() {
 		// 1 Arrange - Preparar
-
+		int base = (int) Math.random()*1+9999;
 		// 2 Act - Ejecutar
-		int esperado = 10;
-		int resultado = Producto.potencia(10, 1);
+		int esperado = base;
+		int resultado = Producto.potencia(base, 1);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
 		
@@ -135,17 +132,17 @@ class TestProducto {
 	
 	void testPotenciabase0iguala0() {
 		// 1 Arrange - Preparar
-
+		int exponente = (int) Math.random()*1+9999;
 		// 2 Act - Ejecutar
 		int esperado = 0;
-		int resultado = Producto.potencia(0, 2);
+		int resultado = Producto.potencia(0, exponente);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
 	}
 	
 	/**
 	 * Este Test comprobara que, como se indica en los casos especiales, cualquier
-	 * potencia con base positiva siempre será positiva Test method for
+	 * potencia con base positiva siempre serï¿½ positiva Test method for
 	 * {@link Producto#potencia(int, int)}.
 	 */
 	@Test
@@ -172,8 +169,8 @@ class TestProducto {
 		// 1 Arrange - Preparar
 
 		// 2 Act - Ejecutar
-		int esperado = 9261;
-		int resultado = Producto.potencia(21, 3);
+		int esperado = 194481;
+		int resultado = Producto.potencia(-21, 4);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
 	}
