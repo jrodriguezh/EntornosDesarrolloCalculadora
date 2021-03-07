@@ -1,11 +1,16 @@
-import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
 
+public class Main {
+	
+
+	
 	public static void main(String[] args) {
 
+
 		Scanner sn = new Scanner(System.in);
+		sn.useLocale(Locale.US);
 		boolean salir = false;
 		int opcion;
 		int opcionSuma;
@@ -13,18 +18,19 @@ public class Main {
 		int opcionMultiplicar;
 		int opcionDividir;
 
-		System.out.println("Bienvenido a CALCULADORA, ¿Que operación desea realizar?");
+		System.out.println("Bienvenido a CALCULADORA:");
 
 		while (!salir) {
 
+			System.out.println("Selecciona cual de las operaciones deseas usar:");
+			
 			System.out.println("1. Sumar");
 			System.out.println("2. Restar");
 			System.out.println("3. Multiplicar/Potencia");
-			System.out.println("3. Dividir/Raiz Cuadrada");
-			System.out.println("4. Salir");
+			System.out.println("4. Dividir/Raiz Cuadrada");
+			System.out.println("5. Salir");
 			System.out.println(" ");
 
-			System.out.println("Selecciona una de las opciones a continuación:");
 			opcion = sn.nextInt();
 
 			switch (opcion) {
@@ -46,7 +52,7 @@ public class Main {
 					System.out.println("Introduzca los dos números reales");
 					double sumdec1 = sn.nextDouble();
 					double sumdec2 = sn.nextDouble();
-					Resta.resta(sumdec1, sumdec2);
+					System.out.println(Suma.suma(sumdec1, sumdec2));
 					break;
 				case 2:
 					System.out.println("Introduzca los dos números enteros");
@@ -90,26 +96,26 @@ public class Main {
 					System.out.println("Introduzca los dos números reales");
 					double sumdec1 = sn.nextDouble();
 					double sumdec2 = sn.nextDouble();
-					Resta.resta(sumdec1, sumdec2);
+					System.out.println(Resta.resta(sumdec1, sumdec2));
 					break;
 				case 2:
 					System.out.println("Introduzca los dos números enteros");
 					int sument1 = sn.nextInt();
 					int sument2 = sn.nextInt();
-					Resta.resta(sument1, sument2);
+					System.out.println(Resta.resta(sument1, sument2));
 					break;
 				case 3:
 					System.out.println("Introduzca los tres números reales");
 					double sumdec3 = sn.nextDouble();
 					double sumdec4 = sn.nextDouble();
 					double sumdec5 = sn.nextDouble();
-					Resta.resta(sumdec3, sumdec4, sumdec5);
+					System.out.println(Resta.resta(sumdec3, sumdec4, sumdec5));
 					break;
 				case 4:
 					System.out.println("Introduzca el valor acumulado");
 					System.out.println("Cuando desee salir, tecleé " + "salir" + " ");
 					int valacumul = sn.nextInt();
-					Resta.restaAcumulado(valacumul);
+					System.out.println(Resta.restaAcumulado(valacumul));
 
 					break;
 				}
@@ -134,29 +140,30 @@ public class Main {
 					System.out.println("Introduzca los dos números reales");
 					double muldec1 = sn.nextDouble();
 					double muldec2 = sn.nextDouble();
-					Producto.producto(muldec1, muldec2);
-					break;					
+					System.out.println(Producto.producto(muldec1, muldec2));
+					break;
 				case 2:
 					System.out.println("Introduzca los dos números enteros");
 					int mulent1 = sn.nextInt();
 					int mulent2 = sn.nextInt();
-					Producto.producto(mulent1, mulent2);
+					System.out.println(Producto.producto(mulent1, mulent2));
 					break;
 				case 3:
 					System.out.println("Introduzca los tres números reales");
 					double muldec3 = sn.nextDouble();
 					double muldec4 = sn.nextDouble();
-					double muldec5= sn.nextDouble();
-					Producto.producto(muldec3, muldec4, muldec5);
-					break;					
+					double muldec5 = sn.nextDouble();
+					System.out.println(Producto.producto(muldec3, muldec4, muldec5));
+					break;
 				case 4:
 					System.out.println("Introduzca el valor de la base");
-					int base=sn.nextInt();
+					int base = sn.nextInt();
 					System.out.println("Introduzca el valor del exponente");
-					int exponente=sn.nextInt();
-					Producto.potencia(base,exponente);
+					int exponente = sn.nextInt();
+					System.out.println(Producto.potencia(base, exponente));
 					break;
 				}
+				
 
 				break;
 			case 4:
@@ -178,26 +185,27 @@ public class Main {
 					System.out.println("Introduzca los dos números reales");
 					double divdec1 = sn.nextDouble();
 					double divdec2 = sn.nextDouble();
-					Cociente.division(divdec1, divdec2);
-					break;					
+					System.out.println(Cociente.division(divdec1, divdec2));
+					break;
 				case 2:
 					System.out.println("Introduzca los dos números enteros");
 					int divent1 = sn.nextInt();
 					int divent2 = sn.nextInt();
-					Cociente.division(divent1, divent2);
+					System.out.println(Cociente.division(divent1, divent2));
 					break;
 				case 3:
 					System.out.println("Introduzca de que número quiere obtener el inverso");
-					double inverso= sn.nextdouble();
-					Cociente.inverso(inverso);
-					break;					
-				case 4:
-					System.out.println("Introduzca el valor de la base");
-					double radicando=sn.nextdouble();
-					Cociente.raiz(radicando);
+					double inverso = sn.nextDouble();
+					System.out.println(Cociente.inverso(inverso));
 					break;
+				case 4:
+					System.out.println("Introduzca el valor del radicando");
+					double radicando = sn.nextDouble();
+					System.out.println(Cociente.raiz(radicando));
+					break;
+				case 5:
+					salir = true;
 				}
-
 				break;
 			case 5:
 				salir = true;
