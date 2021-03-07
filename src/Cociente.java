@@ -6,9 +6,16 @@
  */
 
 public class Cociente {
-	
+
 	/**
 	 * Este metodo sirve para realizar la division de dos numeros reales
+	 * 
+	 * Casos especiales:<br>
+	 * 
+	 * No es posible dividir entre cero, puesto que daraa lugar a un numero
+	 * infinito, Si divides un numero entre 0 dara lugar a un error tipo
+	 * java.lang.ArithmeticException: / by zero
+	 * 
 	 * 
 	 * @param valor1 Contendra el primer numero real de la division
 	 * @param valor2 Contendra el segundo numero real de la division
