@@ -12,9 +12,10 @@ public class Cociente {
 	 * 
 	 * Casos especiales:<br>
 	 * 
-	 * No es posible dividir entre cero, puesto que daraa lugar a un numero
+	 * No es posible dividir entre cero, puesto que dara lugar a un numero
 	 * infinito, Si divides un numero entre 0 dara lugar a un error tipo
-	 * java.lang.ArithmeticException: / by zero
+	 * java.lang.ArithmeticException: / by zero. Si la division no resulta en un
+	 * numero exacto, el programa devolvera una aproximacion
 	 * 
 	 * 
 	 * @param valor1 Contendra el primer numero real de la division
@@ -33,7 +34,8 @@ public class Cociente {
 	 * 
 	 * No es posible dividir entre cero, puesto que daraa lugar a un numero
 	 * infinito, Si divides un numero entre 0 dara lugar a un error tipo
-	 * java.lang.ArithmeticException: / by zero
+	 * java.lang.ArithmeticException: / by zero. Si la division no resulta en un
+	 * numero exacto, el programa devolvera una aproximacion
 	 * 
 	 * 
 	 * 
@@ -50,7 +52,15 @@ public class Cociente {
 
 	/**
 	 * Este metodo sirve para calcular el inverso "1/x siendo x el numero" de un
-	 * numero
+	 * numero<br>
+	 * 
+	 * Casos especiales:<br>
+	 * 
+	 * No es posible dividir entre cero, puesto que daraa lugar a un numero
+	 * infinito, Si divides un numero entre 0 dara lugar a un error tipo
+	 * java.lang.ArithmeticException: / by zero. Si la division no resulta en un
+	 * numero exacto, el programa devolvera una aproximacion
+	 * 
 	 * 
 	 * @param valor1 Contendra el valor del numero a invertir
 	 * @return devolvera el resultado de la inversion
@@ -59,6 +69,7 @@ public class Cociente {
 	public static int inverso(int valor1) {
 		return 1 / valor1;
 	}
+
 
 	/**
 	 * Este metodo sirve para realizar el calculo de la raiz cuadrada de un numero
