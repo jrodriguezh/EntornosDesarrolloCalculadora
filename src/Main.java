@@ -188,12 +188,12 @@ public class Main {
 					break;
 				case 3:
 					System.out.println("Introduzca de que número quiere obtener el inverso");
-					double inverso= sn.nextdouble();
+					double inverso= sn.nextDouble();
 					Cociente.inverso(inverso);
 					break;					
 				case 4:
 					System.out.println("Introduzca el valor de la base");
-					double radicando=sn.nextdouble();
+					double radicando= sn.nextDouble();
 					Cociente.raiz(radicando);
 					break;
 				}
