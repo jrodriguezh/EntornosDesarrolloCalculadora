@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -13,10 +12,12 @@ public class Main {
 		int opcionMultiplicar;
 		int opcionDividir;
 
-		System.out.println("Bienvenido a CALCULADORA, ¿Que operación desea realizar?");
+		System.out.println("Bienvenido a CALCULADORA:");
 
 		while (!salir) {
 
+			System.out.println("Selecciona cual de las operaciones deseas usar:");
+			
 			System.out.println("1. Sumar");
 			System.out.println("2. Restar");
 			System.out.println("3. Multiplicar/Potencia");
@@ -24,7 +25,6 @@ public class Main {
 			System.out.println("5. Salir");
 			System.out.println(" ");
 
-			System.out.println("Selecciona una de las opciones a continuación:");
 			opcion = sn.nextInt();
 
 			switch (opcion) {
@@ -178,23 +178,23 @@ public class Main {
 					System.out.println("Introduzca los dos números reales");
 					double divdec1 = sn.nextDouble();
 					double divdec2 = sn.nextDouble();
-					Cociente.division(divdec1, divdec2);
+					System.out.println(Cociente.division(divdec1, divdec2));
 					break;
 				case 2:
 					System.out.println("Introduzca los dos números enteros");
 					int divent1 = sn.nextInt();
 					int divent2 = sn.nextInt();
-					Cociente.division(divent1, divent2);
+					System.out.println(Cociente.division(divent1, divent2));
 					break;
 				case 3:
 					System.out.println("Introduzca de que número quiere obtener el inverso");
 					double inverso = sn.nextDouble();
-					Cociente.inverso(inverso);
+					System.out.println(Cociente.inverso(inverso));
 					break;
 				case 4:
-					System.out.println("Introduzca el valor de la base");
+					System.out.println("Introduzca el valor del radicando");
 					double radicando = sn.nextDouble();
-					Cociente.raiz(radicando);
+					System.out.println(Cociente.raiz(radicando));
 					break;
 				}
 
