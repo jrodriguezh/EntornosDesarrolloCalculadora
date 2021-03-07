@@ -28,7 +28,7 @@ public class Resta {
 	 * @return devolvera el restultado de la resta
 	 */
 	
-	public static double resta(double valor1, double valor2,) {
+	public static double resta(double valor1, double valor2) {
 		return valor1 - valor2;
 	}
 	
@@ -42,10 +42,15 @@ public class Resta {
 	 */
 	
 	public static int resta(int valor1, int valor2, int valor3) {
-		return valor1 + valor2 + valor2;
+		return valor1 - valor2 - valor2;
 	}
 	
-	
+	/**
+	 * Este metodo sirve para restar un valor acumulado
+	 * 
+	 * @param nuevovalor
+	 * @return
+	 */
 	
 	public static int restaAcumulado(int nuevovalor) {
 		acumulador -= nuevovalor;
