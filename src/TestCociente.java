@@ -49,9 +49,9 @@ class TestCociente {
 	@Test
 	void testDivisionIntInt() {
 		// 1 Arrange - Preparar
-		double esperado = 3.75;
+		double esperado = 6.25;
 		// 2 Act - Ejecutar
-		int resultado = Cociente.division(15, 4);
+		double resultado = Cociente.division(25, 4);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
 	}
@@ -66,7 +66,7 @@ class TestCociente {
 		// 1 Arrange - Preparar
 		double esperado = 0.2;
 		// 2 Act - Ejecutar
-		int resultado = Cociente.inverso(5);
+		double resultado = Cociente.inverso(5);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
 	}
@@ -81,7 +81,7 @@ class TestCociente {
 		// 1 Arrange - Preparar
 		double esperado = Double.POSITIVE_INFINITY;
 		// 2 Act - Ejecutar
-		int resultado = Cociente.inverso(0);
+		double resultado = Cociente.inverso(0);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
 	}
