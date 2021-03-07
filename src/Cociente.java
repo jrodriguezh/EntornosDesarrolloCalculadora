@@ -60,4 +60,18 @@ public class Cociente {
 		return 1 / valor1;
 	}
 
+	/**
+	 * Este metodo sirve para realizar el calculo de la raiz cuadrada de un numero
+	 * entero
+	 * 
+	 * @param valor1 Contendra el valor del que se quiere calcular la raiz cuadrada
+	 * @return devolvera el resultado de la raiz cuadrada
+	 */
+
+	public static double raiz(int valor1) {
+
+		return Math.sqrt(valor1);
+
+	}
+	
 }
