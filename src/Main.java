@@ -20,8 +20,8 @@ public class Main {
 			System.out.println("1. Sumar");
 			System.out.println("2. Restar");
 			System.out.println("3. Multiplicar/Potencia");
-			System.out.println("3. Dividir/Raiz Cuadrada");
-			System.out.println("4. Salir");
+			System.out.println("4. Dividir/Raiz Cuadrada");
+			System.out.println("5. Salir");
 			System.out.println(" ");
 
 			System.out.println("Selecciona una de las opciones a continuación:");
@@ -134,27 +134,27 @@ public class Main {
 					System.out.println("Introduzca los dos números reales");
 					double muldec1 = sn.nextDouble();
 					double muldec2 = sn.nextDouble();
-					Producto.producto(muldec1, muldec2);
-					break;					
+					System.out.println(Producto.producto(muldec1, muldec2));
+					break;
 				case 2:
 					System.out.println("Introduzca los dos números enteros");
 					int mulent1 = sn.nextInt();
 					int mulent2 = sn.nextInt();
-					Producto.producto(mulent1, mulent2);
+					System.out.println(Producto.producto(mulent1, mulent2));
 					break;
 				case 3:
 					System.out.println("Introduzca los tres números reales");
 					double muldec3 = sn.nextDouble();
 					double muldec4 = sn.nextDouble();
-					double muldec5= sn.nextDouble();
-					Producto.producto(muldec3, muldec4, muldec5);
-					break;					
+					double muldec5 = sn.nextDouble();
+					System.out.println(Producto.producto(muldec3, muldec4, muldec5));
+					break;
 				case 4:
 					System.out.println("Introduzca el valor de la base");
-					int base=sn.nextInt();
+					int base = sn.nextInt();
 					System.out.println("Introduzca el valor del exponente");
-					int exponente=sn.nextInt();
-					Producto.potencia(base,exponente);
+					int exponente = sn.nextInt();
+					System.out.println(Producto.potencia(base, exponente));
 					break;
 				}
 
@@ -179,7 +179,7 @@ public class Main {
 					double divdec1 = sn.nextDouble();
 					double divdec2 = sn.nextDouble();
 					Cociente.division(divdec1, divdec2);
-					break;					
+					break;
 				case 2:
 					System.out.println("Introduzca los dos números enteros");
 					int divent1 = sn.nextInt();
@@ -188,12 +188,12 @@ public class Main {
 					break;
 				case 3:
 					System.out.println("Introduzca de que número quiere obtener el inverso");
-					double inverso= sn.nextDouble();
+					double inverso = sn.nextDouble();
 					Cociente.inverso(inverso);
-					break;					
+					break;
 				case 4:
 					System.out.println("Introduzca el valor de la base");
-					double radicando= sn.nextDouble();
+					double radicando = sn.nextDouble();
 					Cociente.raiz(radicando);
 					break;
 				}
