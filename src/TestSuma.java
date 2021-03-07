@@ -19,9 +19,8 @@ class TestSuma {
 	
 	void testSumaDoubleDouble() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		double esperado = 8.1;
+		// 2 Act - Ejecutar
 		double resultado = Suma.suma(2.3, 5.8);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -36,9 +35,8 @@ class TestSuma {
 
 	void testSumaIntInt() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 23;
+		// 2 Act - Ejecutar
 		int resultado = Suma.suma(16, 7);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -51,9 +49,8 @@ class TestSuma {
 	@Test
 	void testSumaDoubleDoubleDouble() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		double esperado = 19.8;
+		// 2 Act - Ejecutar
 		double resultado = Suma.suma(8.4, 6.9, 4.5);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);
@@ -66,9 +63,8 @@ class TestSuma {
 	@Test
 	void testSumaIntIntInt() {
 		// 1 Arrange - Preparar
-
-		// 2 Act - Ejecutar
 		int esperado = 58;
+		// 2 Act - Ejecutar
 		int resultado = Suma.suma(20, 14, 24);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, resultado);

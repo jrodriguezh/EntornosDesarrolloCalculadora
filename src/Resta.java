@@ -18,12 +18,12 @@ public class Resta {
 	 * @param valor2 Contendra el primer numero entero de la resta
 	 */
 	
-	public static void resta(int valor1, int valor2) {
-		System.out.println(valor1 - valor2);
+	public static int resta(int valor1, int valor2) {
+		return (valor1 - valor2);
 	}
 	
 	/**
-	 * Este metodo sirve para restar tres numeros reales<br>
+	 * Este metodo sirve para restar dos numeros reales<br>
 	 * 
 	 * Casos especiales: 
 	 * <br>
@@ -33,8 +33,8 @@ public class Resta {
 	 * @param valor2 Contendra el segundo numero real de la resta
 	 */
 	
-	public static void resta(double valor1, double valor2) {
-		System.out.println(valor1 - valor2);
+	public static double resta(double valor1, double valor2) {
+		return (valor1 - valor2);
 	}
 	
 	/**
@@ -49,23 +49,23 @@ public class Resta {
 	 * @param valor3 Contendra el tercer numero entero de la resta
 	 */
 	
-	public static void resta(double valor1, double valor2, double valor3) {
-		System.out.println(valor1 - valor2 - valor3);
+	public static double resta(double valor1, double valor2, double valor3) {
+		return (valor1 - valor2 - valor3);
 	}
 	
 	/**
 	 * Este metodo sirve para restar un valor acumulado<br>
 	 * 
-	 * Casos especiales: 
+	 * Casos especiales:
 	 * <br>
 	 * Esta calculadora no permitira la entrada de numeros negativos
 	 * 
 	 * @param nuevovalor
 	 */
 	
-	public static void restaAcumulado(int nuevovalor) {
+	public static int restaAcumulado(int nuevovalor) {
 		acumulador -= nuevovalor;
-		System.out.println(acumulador);
+		return (acumulador);
 
 	}
 }
