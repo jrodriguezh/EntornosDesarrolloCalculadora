@@ -46,7 +46,7 @@ public class Main {
 					System.out.println("Introduzca los dos números reales");
 					double sumdec1 = sn.nextDouble();
 					double sumdec2 = sn.nextDouble();
-					Resta.resta(sumdec1, sumdec2);
+					System.out.println(Suma.suma(sumdec1, sumdec2));
 					break;
 				case 2:
 					System.out.println("Introduzca los dos números enteros");
@@ -90,26 +90,26 @@ public class Main {
 					System.out.println("Introduzca los dos números reales");
 					double sumdec1 = sn.nextDouble();
 					double sumdec2 = sn.nextDouble();
-					Resta.resta(sumdec1, sumdec2);
+					System.out.println(Resta.resta(sumdec1, sumdec2));
 					break;
 				case 2:
 					System.out.println("Introduzca los dos números enteros");
 					int sument1 = sn.nextInt();
 					int sument2 = sn.nextInt();
-					Resta.resta(sument1, sument2);
+					System.out.println(Resta.resta(sument1, sument2));
 					break;
 				case 3:
 					System.out.println("Introduzca los tres números reales");
 					double sumdec3 = sn.nextDouble();
 					double sumdec4 = sn.nextDouble();
 					double sumdec5 = sn.nextDouble();
-					Resta.resta(sumdec3, sumdec4, sumdec5);
+					System.out.println(Resta.resta(sumdec3, sumdec4, sumdec5));
 					break;
 				case 4:
 					System.out.println("Introduzca el valor acumulado");
 					System.out.println("Cuando desee salir, tecleé " + "salir" + " ");
 					int valacumul = sn.nextInt();
-					Resta.restaAcumulado(valacumul);
+					System.out.println(Resta.restaAcumulado(valacumul));
 
 					break;
 				}
