@@ -57,7 +57,7 @@ public class Main {
                         	Suma.suma(sument1, sument2);
                         	break;
                         case 3:
-                        	System.out.println("Introduzca los tres números enteros");
+                        	System.out.println("Introduzca los tres números reales");
                         	double sumdec3 = sn.nextDouble();
                         	double sumdec4 = sn.nextDouble();
                         	double sumdec5 = sn.nextDouble();
@@ -86,6 +86,37 @@ public class Main {
                         System.out.println(" ");
                         System.out.println("Selecciona una de las opciones a continuación:");
                         opcionResta = sn.nextInt();
+                        
+                        
+                        switch (opcionResta) {
+                        case 1:
+                        	System.out.println("Introduzca los dos números decimales");
+                        	double sumdec1  = sn.nextDouble();
+                        	double sumdec2 = sn.nextDouble();
+                        	Resta.resta(sumdec1, sumdec2);
+                        	break;
+                        case 2:
+                        	System.out.println("Introduzca los dos números enteros");
+                        	int sument1  = sn.nextInt();
+                        	int sument2 = sn.nextInt();
+                        	Resta.resta (sument1, sument2);
+                        	break;
+                        case 3:
+                        	System.out.println("Introduzca los tres números reales");
+                        	double sumdec3 = sn.nextDouble();
+                        	double sumdec4 = sn.nextDouble();
+                        	double sumdec5 = sn.nextDouble();
+                        	Resta.resta(sumdec3, sumdec4, sumdec5);
+                        	break;
+                        case 4:
+                        	System.out.println("Introduzca el valor acumulado");
+                        	System.out.println("Cuando desee salir, tecleé " + "salir" + " ");
+                        	int valacumul = sn.nextInt();
+                        	while (valacumul != 0) {
+                        	Resta.restaAcumulado(valacumul);
+                        	}
+                        	break;
+                        }
                         
                         break;
                     case 3:
