@@ -24,10 +24,8 @@ public class Main {
             System.out.println("4. Salir");
             System.out.println(" ");
  
-            try {
- 
-                System.out.println("Selecciona una de las opciones a continuación:");
-                opcion = sn.nextInt();
+            System.out.println("Selecciona una de las opciones a continuación:");
+            opcion = sn.nextInt();
  
                 switch (opcion) {
                     case 1:
@@ -46,29 +44,29 @@ public class Main {
                         switch (opcionSuma) {
                         case 1:
                         	System.out.println("Introduzca los dos números decimales");
-                        	double sumdec1  = sn.nextDouble();
+                        	double sumdec1 = sn.nextDouble();
                         	double sumdec2 = sn.nextDouble();
-                        	Suma.suma(sumdec1, sumdec2);
+                        	Resta.resta(sumdec1, sumdec2);
                         	break;
                         case 2:
                         	System.out.println("Introduzca los dos números enteros");
                         	int sument1  = sn.nextInt();
                         	int sument2 = sn.nextInt();
-                        	Suma.suma(sument1, sument2);
+                        	System.out.println(Suma.suma(sument1, sument2));    	
                         	break;
                         case 3:
                         	System.out.println("Introduzca los tres números reales");
                         	double sumdec3 = sn.nextDouble();
                         	double sumdec4 = sn.nextDouble();
                         	double sumdec5 = sn.nextDouble();
-                        	Suma.suma(sumdec3, sumdec4, sumdec5);
+                        	System.out.println(Suma.suma(sumdec3, sumdec4, sumdec5));	
                         	break;
                         case 4:
                         	System.out.println("Introduzca el valor acumulado");
                         	System.out.println("Cuando desee salir, tecleé " + "salir" + " ");
                         	int valacumul = sn.nextInt();
                         	while (valacumul != 0) {
-                        	Suma.sumaAcumulado(valacumul);
+                        	System.out.println(Suma.sumaAcumulado(valacumul));	
                         	}
                         	break;
                         }
@@ -91,13 +89,13 @@ public class Main {
                         switch (opcionResta) {
                         case 1:
                         	System.out.println("Introduzca los dos números decimales");
-                        	double sumdec1  = sn.nextDouble();
+                        	double sumdec1 = sn.nextDouble();
                         	double sumdec2 = sn.nextDouble();
                         	Resta.resta(sumdec1, sumdec2);
                         	break;
                         case 2:
                         	System.out.println("Introduzca los dos números enteros");
-                        	int sument1  = sn.nextInt();
+                        	int sument1 = sn.nextInt();
                         	int sument2 = sn.nextInt();
                         	Resta.resta (sument1, sument2);
                         	break;
@@ -112,9 +110,8 @@ public class Main {
                         	System.out.println("Introduzca el valor acumulado");
                         	System.out.println("Cuando desee salir, tecleé " + "salir" + " ");
                         	int valacumul = sn.nextInt();
-                        	while (valacumul != 0) {
                         	Resta.restaAcumulado(valacumul);
-                        	}
+                        	
                         	break;
                         }
                         
@@ -152,9 +149,7 @@ public class Main {
                         break;
                     default:
                         System.out.println("Solo números entre 1 y 4");
-                }
-            } catch (InputMismatchException e) {
-                System.out.println("Debes insertar un número");
+                
                 sn.next();
             }
         }
